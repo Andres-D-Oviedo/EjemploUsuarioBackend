@@ -1,0 +1,17 @@
+{
+    "version":1,
+    "build":{
+        "src": "server.js",
+        "use": "@vercel/node"
+    },
+    "routes":[{
+        "src":"/(.*)",
+        "dest":"server.js"
+    }],
+    "env":{
+        "NODE_ENV":"production",
+        "API_KEY": "@mi_variable_secreta"
+    }
+    
+}
+    
